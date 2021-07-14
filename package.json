@@ -1,0 +1,55 @@
+{
+  "name": "normalize-cjk",
+  "version": "0.1.0",
+  "license": "MIT",
+  "sideEffects": false,
+  "source": "./src/index.ts",
+  "main": "./lib/index.js",
+  "module": "./lib/index.module.js",
+  "unpkg": "./lib/index.umd.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/index.module.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "homepage": "https://github.com/daangn/normalize-cjk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daangn/normalize-cjk.git"
+  },
+  "author": {
+    "name": "Hyeseong Kim",
+    "email": "tim@daangn.com"
+  },
+  "keywords": [
+    "unicode",
+    "cjk",
+    "chinese",
+    "japanese",
+    "korean",
+    "hangul",
+    "hiragana",
+    "katakana"
+  ],
+  "files": [
+    "README",
+    "LICENSE",
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "prepack": "yarn build",
+    "test": "uvu -r esbuild-register",
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "devDependencies": {
+    "esbuild-register": "^2.6.0",
+    "microbundle": "^0.13.3",
+    "typescript": "^4.3.5",
+    "uvu": "^0.5.1"
+  }
+}
