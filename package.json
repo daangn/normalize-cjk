@@ -1,6 +1,6 @@
 {
   "name": "normalize-cjk",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "sideEffects": false,
   "source": "./src/index.ts",
@@ -35,8 +35,6 @@
     "katakana"
   ],
   "files": [
-    "README",
-    "LICENSE",
     "src",
     "lib"
   ],
