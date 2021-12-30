@@ -3,13 +3,14 @@
   "version": "0.3.0",
   "license": "MIT",
   "sideEffects": false,
+  "type": "module",
   "source": "./src/index.ts",
-  "main": "./lib/index.js",
+  "main": "./lib/index.mjs",
   "module": "./lib/index.mjs",
   "types": "./lib/index.d.ts",
   "exports": {
     ".": {
-      "require": "./lib/index.js",
+      "require": "./lib/index.cjs",
       "import": "./lib/index.mjs"
     },
     "./package.json": "./package.json"
