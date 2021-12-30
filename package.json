@@ -6,7 +6,6 @@
   "source": "./src/index.ts",
   "main": "./lib/index.js",
   "module": "./lib/index.mjs",
-  "unpkg": "./lib/index.umd.js",
   "types": "./lib/index.d.ts",
   "exports": {
     ".": {
@@ -41,12 +40,11 @@
   "scripts": {
     "prepack": "yarn build",
     "test": "uvu -r esbuild-register",
-    "build": "microbundle --format esm,cjs,umd",
-    "dev": "microbundle watch"
+    "build": "nanobundle build"
   },
   "devDependencies": {
     "esbuild-register": "^2.6.0",
-    "microbundle": "^0.13.3",
+    "nanobundle": "^0.0.19",
     "typescript": "^4.3.5",
     "uvu": "^0.5.1"
   }
