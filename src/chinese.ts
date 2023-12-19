@@ -4,11 +4,9 @@
  * @See https://ctext.org/faq/normalization
  */
 export const normalizeChinese = (input: string): string => {
-  let converted = '';
-  for (const ch of input) {
-    converted += CONVERSION_TABLE.get(ch) ?? ch;
-  }
-  return converted;
+  return input
+    .split('')
+    .reduce((acc, ch) => acc + CONVERSION_TABLE.get(ch) ?? ch, '');
 };
 
 // Conversion data listed on https://ctext.org/faq/normalization
