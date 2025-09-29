@@ -2,14 +2,12 @@
   "name": "normalize-cjk",
   "version": "0.4.0",
   "license": "MIT",
-  "sideEffects": false,
   "type": "module",
-  "source": "./src/index.ts",
   "main": "./lib/index.mjs",
-  "module": "./lib/index.mjs",
   "types": "./lib/index.d.ts",
   "exports": {
     ".": {
+      "types": "./lib/index.d.ts",
       "require": "./lib/index.cjs",
       "import": "./lib/index.mjs"
     },
@@ -39,15 +37,14 @@
     "lib"
   ],
   "scripts": {
-    "prepack": "yarn build",
-    "test": "uvu -r esbuild-register",
+    "prepack": "yarn build --clean",
+    "test": "node --test",
     "build": "nanobundle build"
   },
   "devDependencies": {
-    "esbuild-register": "^3.3.1",
-    "nanobundle": "^0.0.19",
-    "typescript": "^4.5.4",
-    "uvu": "^0.5.2"
+    "@types/node": "^24.5.2",
+    "nanobundle": "^2.1.0",
+    "typescript": "^5.9.2"
   },
   "packageManager": "yarn@4.10.3"
 }
