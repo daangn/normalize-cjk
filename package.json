@@ -42,6 +42,7 @@
     "build": "nanobundle build"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.7",
     "@types/node": "^24.5.2",
     "nanobundle": "^2.1.0",
     "typescript": "^5.9.2"
