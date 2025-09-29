@@ -3,24 +3,10 @@
   "version": "0.4.0",
   "license": "MIT",
   "type": "module",
-  "main": "./lib/index.mjs",
-  "types": "./lib/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./lib/index.d.ts",
-      "require": "./lib/index.cjs",
-      "import": "./lib/index.mjs"
-    },
-    "./package.json": "./package.json"
-  },
   "homepage": "https://github.com/daangn/normalize-cjk",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/daangn/normalize-cjk.git"
-  },
-  "author": {
-    "name": "Hyeseong Kim",
-    "email": "tim@daangn.com"
   },
   "keywords": [
     "unicode",
@@ -32,6 +18,24 @@
     "hiragana",
     "katakana"
   ],
+  "author": {
+    "name": "Danggeun Market Inc.",
+    "email": "daangn-oss@daangn.com"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "main": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "require": "./lib/index.cjs",
+      "import": "./lib/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
   "files": [
     "src",
     "lib"
